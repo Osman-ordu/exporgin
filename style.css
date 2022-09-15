@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E6E6E6;
+}
+
+/* cart-group */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 40px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 20% !important;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 0;
+    border: none;
+    transition: all 0.2s;
+    box-shadow: 2px 6px 12px 0px #000;
+
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card .card-content {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(248, 76, 24);
+}
+.card .card-img {
+    transition: all 0.2s;
+
+}
+.card .card-img:hover {
+    transform: scale(1.20);
+}
+
+
+.card .card-title {
+    text-align: center;
+    font-size: 12px;
+}
+
+
+#card-container-2 .cards .card {
+    width: 25% !important;
+    overflow: hidden;
+}
+
+.main {
+    background-color: #1912ea;
+    border-radius: 22px;
+}
+
+.text-content p {
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.bolder-text {
+    font-size: 18px;
+}
+
+/* button-group */
+.btn {
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    font-size: 25px;
+    font-weight: 700;
+    background: linear-gradient(to right, #fab617, #ff7a0d, #ff4e0d, #f54809);
+    transition: all 0.5s;
+
+}
+.btn:hover {
+    opacity: 0.9;
+    color: #fff;
+}
+/* button-group end */
+
+@media screen and (max-width: 1080px) {
+    .card {
+        width: 30% !important;
+    }
+
+    #card-container-2 .cards .card {
+        width: 30% !important;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .card {
+        width: 40% !important;
+    }
+
+    #card-container-2 .cards .card {
+        width: 40% !important;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 50% !important;
+    }
+
+    #card-container-2 .cards .card {
+        width: 50% !important;
+    }
+    .text-content p {
+        font-size: 12px;
+    }
+    .bolder-text {
+        font-size: 14px;
+    }
+
+}
